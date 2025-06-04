@@ -5,8 +5,13 @@ const App = () => {
   return (
     <div>
 
+
+      <Header />
+      <Hero/>
+=======
       <Header/>
       <Card />
+
     </div>
   )
 }
