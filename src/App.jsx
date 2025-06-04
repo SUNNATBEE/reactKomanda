@@ -6,8 +6,17 @@ const App = () => {
   return (
     <div>
 
+
+      <Header />
+      <Hero/>
+
       <Header/>
+
       <Something />
+
+      <Card />
+
+
     </div>
   )
 }
