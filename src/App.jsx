@@ -1,25 +1,14 @@
-import React from 'react'
-import Header from './components/Header'
-import Hero from './components/Hero'
-import Main from "./components/Main"
-import Something from "./components/Something"
-import Card from "./components/Card"
-
+import React from 'react';
+import Header from './components/Header';
+import Section1 from './components/Section1';
 
 const App = () => {
   return (
-    <div>
-
-<Header/>
-<Hero/>
-<Card/>
-<Main/>
-<Something/>
-      
-
-
+    <div className="bg-gray-50 min-h-screen w-[90%] mx-auto">
+      <Header />
+      <Section1 />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
