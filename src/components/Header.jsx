@@ -21,6 +21,7 @@ const Header = () => {
         <span className="font-semibold text-lg text-gray-800">1С-Товары</span>
       </div>
 
+ Azimjonka
       {/* Desktop Navigation */}
       <nav className="hidden md:flex space-x-6 text-sm text-gray-700">
         {navItems.map((item, idx) => (
@@ -36,7 +37,7 @@ const Header = () => {
       </nav>
 
       {/* Mobile Menu Button */}
-      <button
+       <button
         className="md:hidden flex items-center px-2 py-1 border rounded text-gray-700 border-gray-300"
         onClick={() => setMenuOpen(!menuOpen)}
         aria-label="Открыть меню"
@@ -45,6 +46,10 @@ const Header = () => {
           <path strokeLinecap="round" strokeLinejoin="round" d={menuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
         </svg>
       </button>
+
+    <div className='bg-amber-700'> Sunnatbek Header
+  
+ main
 
       {/* Login Button */}
       <a
