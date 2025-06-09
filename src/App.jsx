@@ -1,5 +1,8 @@
 import React from 'react'
 import Header from './components/Header'
+import Main from './components/Main';
+import Card from './components/Card';
+import Section3 from './components/Section3';
 
 const App = () => {
   return (
@@ -7,9 +10,8 @@ const App = () => {
 
 
       <Header />
-      <Hero/>
-=======
-      <Header/>
+      <Main/>
+      <Section3/>
       <Card />
 
     </div>
