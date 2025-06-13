@@ -13,8 +13,8 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="w-full bg-white shadow-sm py-4 px-6 flex items-center justify-between relative">
-      {/* Logo */}
+    <header className="w-full bg-white shadow-sm py-4 px-6 flex items-center justify-between">
+   
       <div className="flex items-center space-x-2">
         <img src={logo} alt="1C-Товары" className="w-6 h-6" />
         <span className="font-semibold text-lg text-gray-800">1С-Товары</span>
@@ -33,6 +33,20 @@ const Header = () => {
           </a>
         ))}
       </nav>
+
+      {/* Mobile Menu Button */}
+       <button
+        className="md:hidden flex items-center px-2 py-1 border rounded text-gray-700 border-gray-300"
+        onClick={() => setMenuOpen(!menuOpen)}
+        aria-label="Открыть меню"
+      >
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" d={menuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
+        </svg>
+      </button>
+
+  
+
 
       {/* Login Button */}
       <a
