@@ -1,27 +1,25 @@
-import React, { useState } from 'react';
-import logo from '../assets/image 1 (3).png';
+import React, { useState } from "react";
+import logo from "../assets/image 1 (3).png";
 
 const navItems = [
-  'Как это работает',
-  'Инструкции',
-  'Продукты',
-  'База знаний',
-  'О нас',
+  "Как это работает",
+  "Инструкции",
+  "Продукты",
+  "База знаний",
+  "О нас",
 ];
 
 const Header = () => {
-
-
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <header className="w-full bg-white shadow-sm py-4 px-6 flex items-center justify-between">
-   
+      {/* Logo and Brand */}
       <div className="flex items-center space-x-2">
         <img src={logo} alt="1C-Товары" className="w-6 h-6" />
         <span className="font-semibold text-lg text-gray-800">1С-Товары</span>
       </div>
 
- Azimjonka
       {/* Desktop Navigation */}
       <nav className="hidden md:flex space-x-6 text-sm text-gray-700">
         {navItems.map((item, idx) => (
@@ -37,19 +35,25 @@ const Header = () => {
       </nav>
 
       {/* Mobile Menu Button */}
-       <button
+      <button
         className="md:hidden flex items-center px-2 py-1 border rounded text-gray-700 border-gray-300"
         onClick={() => setMenuOpen(!menuOpen)}
         aria-label="Открыть меню"
       >
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" d={menuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
+        <svg
+          className="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d={menuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+          />
         </svg>
       </button>
-
-    <div className='bg-amber-700'> Sunnatbek Header
-  
- main
 
       {/* Login Button */}
       <a
