@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, Check, ChevronRight } from 'lucide-react';
+
 
 
 {/* Raximjanov Abdulatif qildi */}
@@ -36,7 +36,7 @@ const ProductComparison = () => {
             {withoutFeatures.map((feature, index) => (
               <div key={index} className="flex items-start gap-3">
                 <div className="flex-shrink-0 mt-1">
-                  <X className="w-5 h-5 text-red-500" />
+                 
                 </div>
                 <p className="text-sm text-gray-600 leading-relaxed">{feature}</p>
               </div>
@@ -48,13 +48,13 @@ const ProductComparison = () => {
         <div className="bg-green-50 rounded-lg p-6 shadow-sm border border-green-200">
           <h2 className="text-lg font-semibold text-gray-700 mb-6 flex items-center gap-2">
             Вместе с 1C-Товары
-            <ChevronRight className="w-5 h-5 text-gray-400" />
+            
           </h2>
           <div className="space-y-4">
             {withFeatures.map((feature, index) => (
               <div key={index} className="flex items-start gap-3">
                 <div className="flex-shrink-0 mt-1">
-                  <Check className="w-5 h-5 text-green-600" />
+                  
                 </div>
                 <p className="text-sm text-gray-700 leading-relaxed font-medium">{feature}</p>
               </div>
